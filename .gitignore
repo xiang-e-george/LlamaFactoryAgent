@@ -1,0 +1,16 @@
+# 本地环境和凭证只保留在工作区，提交无凭证的配置模板。
+.env
+.env.*
+!.env.example
+
+# 上游源码是独立仓库，避免作为本项目嵌套仓库提交。
+/opensource/
+
+# 后续实现的本地运行数据与 Python 环境。
+/.runtime/
+/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
